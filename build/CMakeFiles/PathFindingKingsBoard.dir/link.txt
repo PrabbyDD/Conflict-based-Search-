@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/PathFindingKingsBoard.dir/Board.cpp.o CMakeFiles/PathFindingKingsBoard.dir/KingsManager.cpp.o CMakeFiles/PathFindingKingsBoard.dir/Pathfinder.cpp.o CMakeFiles/PathFindingKingsBoard.dir/main.cpp.o -o PathFindingKingsBoard 
