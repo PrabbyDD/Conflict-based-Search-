@@ -66,8 +66,8 @@ std::vector<Position> Pathfinder::aStarPath(KingsManager& kings, std::vector<Con
         // 8 directions of neighbors
         for (int i = -1; i <= 1; i++) {
             for (int j = -1; j <= 1; j++) {
-                // If we are at current position go to next
-                if (i == 0 && j == 0) continue; 
+                // If we are at current position go to next, commented out to allow staying in place to be a valid move
+                // if (i == 0 && j == 0) continue; 
                 Position neighbor = {cur.position.x + i, cur.position.y + j}; 
 
                 // OOB checking and checking if board space is empty and check if current king is not constrained at the neighbor position or space occupied
