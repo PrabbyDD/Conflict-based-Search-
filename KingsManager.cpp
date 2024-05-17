@@ -95,12 +95,10 @@ void KingsManager::moveTo(int id, int x, int y, Board& board) {
 int KingsManager::occupiedByKing(const Position& pos) {
     for (const auto& [king_id, p] : kingMap) {
         if (pos == p) {
-            return king_id;
-        } else {
-            return 0; 
+            return king_id; 
         }
     }
-    return -1; 
+    return 0; 
 }
 
 // Move the moving of a king into this class?

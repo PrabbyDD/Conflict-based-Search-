@@ -75,8 +75,7 @@ std::vector<Position> Pathfinder::aStarPath(KingsManager& kings, std::vector<Con
                     neighbor.y >= 0 && neighbor.y < board.getBoardSize() && 
                     visited.count(neighbor) == 0 && 
                     !constrained(king_id, cur.g + 1, neighbor, constraints) &&
-                    !board.alreadyOccupied(neighbor.x, neighbor.y) && 
-                    !kings.occupiedByKing(cur.position)) {
+                    !board.alreadyOccupied(neighbor.x, neighbor.y)) {
                         GraphNode new_neighbor_node(neighbor, new GraphNode(cur), cur.g + 1, heuristic(neighbor, curr_king_goal)); 
                         PQ.push(new_neighbor_node); 
                 }
